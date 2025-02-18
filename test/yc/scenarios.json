@@ -1,8 +1,0 @@
-{
-    "yc": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-        "features": {
-            "yc": {}
-        }
-    }
-}
