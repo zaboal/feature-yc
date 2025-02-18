@@ -1,8 +1,8 @@
 {
-    "name": "Hello, World!",
-    "id": "hello",
-    "version": "1.0.2",
-    "description": "A hello world feature",
+    "name": "Yandec Cloud CLI",
+    "id": "yc",
+    "version": "1.0.0",
+    "description": "The Yandex Cloud command line interface: https://yandex.cloud/docs/cli ",
     "options": {
         "greeting": {
             "type": "string",
