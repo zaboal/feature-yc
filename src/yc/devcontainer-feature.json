@@ -3,10 +3,9 @@
     "id": "yc",
     "version": "1.0.0",
     "description": "The Yandex Cloud command line interface",
-    "options": {},
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
-    ],
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils:2.5.2": {}
+    },
     "entrypoint": "bash",
     "privileged": true,
     "documentationURL": "https://yandex.cloud/docs/cli",
