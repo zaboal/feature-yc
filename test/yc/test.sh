@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source "/root/.bashrc"
-
 # This test file will be executed against an auto-generated devcontainer.json that
 # includes the 'hello' Feature with no options.
 #

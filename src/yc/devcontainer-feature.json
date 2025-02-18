@@ -9,6 +9,5 @@
     "entrypoint": "bash",
     "privileged": true,
     "documentationURL": "https://yandex.cloud/docs/cli",
-    "keywords": ["aws", "cloud", "cli", "yandex"],
-    "postStartCommand": "source ~/.bashrc"
+    "keywords": ["aws", "cloud", "cli", "yandex"]
 }
