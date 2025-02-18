@@ -36,6 +36,7 @@ set -e
 # See https://github.com/devcontainers/cli/blob/HEAD/docs/features/test.md#dev-container-features-test-lib
 # Provides the 'check' and 'reportResults' commands.
 source dev-container-features-test-lib
+source ~/.bashrc
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib. Syntax is...
