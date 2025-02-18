@@ -24,6 +24,8 @@
 
 set -euo pipefail
 
+echo $HOME
+
 VERBOSE=${VERBOSE:-}
 if [[ ${VERBOSE} != "" ]]; then
     set -x
