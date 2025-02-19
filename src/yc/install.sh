@@ -2,7 +2,7 @@
 
 # The MIT License (MIT)
 #
-# Copyright (c) 2018 YANDEX LLC
+# Copyright (c) 2018 YANDEX LLC, Bogdan Alekseevich Zazhigin
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -26,13 +26,7 @@ set -euo pipefail
 
 # Install Yandex.Cloud CLI for the user that will be used,
 # insted of default root user. https://containers.dev/implementors/features/#user-env-var
-USERNAME=${USERNAME:-$_REMOTE_USER}
-
-if [ "$USERNAME" = "root" ]; then
-  HOME="/root"
-else
-  HOME="/home/$USERNAME"
-fi
+HOME=${HOME:-$(eval echo ~${USERNAME:-$_REMOTE_USER})}
 
 VERBOSE=${VERBOSE:-}
 if [[ ${VERBOSE} != "" ]]; then
