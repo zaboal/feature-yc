@@ -9,11 +9,15 @@
     "options": {
         "cli-install-path": {
             "description": "Install to a specific directory.",
-            "type": "string"
+            "type": "string",
+            "enum": [],
+            "default": ""
         },
         "rc-path": {
             "description": "Automatically modify RC_FILE with PATH modification and shell completion.",
-            "type": "string"
+            "type": "string",
+            "enum": [],
+            "default": ""
         },
         "no-rc": {
             "description": "Don't modify the RC file.",
