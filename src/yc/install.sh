@@ -24,7 +24,7 @@
 
 set -euo pipefail
 
-echo $HOME
+HOME=/${_REMOTE_USER}
 
 VERBOSE=${VERBOSE:-}
 if [[ ${VERBOSE} != "" ]]; then

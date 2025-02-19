@@ -7,6 +7,5 @@
         "ghcr.io/devcontainers/features/common-utils:2.5.2": {}
     },
     "documentationURL": "https://yandex.cloud/docs/cli",
-    "keywords": ["aws", "cloud", "cli", "yandex"],
-    "containerUser": "USER"
+    "keywords": ["aws", "cloud", "cli", "yandex"]
 }
