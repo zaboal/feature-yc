@@ -6,6 +6,28 @@
     "dependsOn": {
         "ghcr.io/devcontainers/features/common-utils:2.5.2": {}
     },
+    "options": {
+        "cli-install-path": {
+            "description": "Install to a specific directory.",
+            "type": "string"
+        },
+        "rc-path": {
+            "description": "Automatically modify RC_FILE with PATH modification and shell completion.",
+            "type": "string"
+        },
+        "no-rc": {
+            "description": "Don't modify the RC file.",
+            "type": "string",
+            "enum": ["yes", "no"],
+            "default": "yes"
+        },
+        "autp-rc": {
+            "description": "Automatically modify default rc file with PATH modification and shell completion.",
+            "type": "string",
+            "enum": ["yes", "no"],
+            "default": "yes"
+        }
+    },
     "documentationURL": "https://yandex.cloud/docs/cli",
     "keywords": ["aws", "cloud", "cli", "yandex"]
 }
