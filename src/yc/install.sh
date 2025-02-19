@@ -26,7 +26,13 @@ set -euo pipefail
 
 # Install Yandex.Cloud CLI for the user that will be used,
 # insted of default root user. https://containers.dev/implementors/features/#user-env-var
-HOME=/home/${_REMOTE_USER}
+USERNAME=${USERNAME:-$_REMOTE_USER}
+
+if [ "$USERNAME" = "root" ]; then
+  HOME="/root"
+else
+  HOME="/home/$USERNAME"
+fi
 
 VERBOSE=${VERBOSE:-}
 if [[ ${VERBOSE} != "" ]]; then
