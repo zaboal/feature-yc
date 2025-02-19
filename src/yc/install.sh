@@ -22,13 +22,21 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+# Exit immediately if a command exits with a non-zero status, 
+# treat unset variables as an error, and prevent errors in a pipeline from being masked
 set -euo pipefail
 
-# Install Yandex.Cloud CLI for the user that will be used,
-# insted of default root user. https://containers.dev/implementors/features/#user-env-var
-HOME=${HOME:-$(eval echo ~${USERNAME:-$_REMOTE_USER})}
+# Install for the user the dev container will be used with,
+# as for mcr.microsoft.com/devcontainers/base:*, where the user is not "root".
+# https://containers.dev/implementors/features/#user-env-var
+USERNAME=${USERNAME:-$_REMOTE_USER}
+if [ "$USERNAME" = "root" ]; then
+  HOME="/root"
+else
+  HOME="/home/$USERNAME"
+fi
 
-VERBOSE=${VERBOSE:-}
+VERBOSE=${VERBOSE:-true}
 if [[ ${VERBOSE} != "" ]]; then
     set -x
 fi
