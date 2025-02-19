@@ -32,6 +32,5 @@
             "default": "yes"
         }
     },
-    "documentationURL": "https://yandex.cloud/docs/cli",
     "keywords": ["aws", "cloud", "cli", "yandex"]
 }
