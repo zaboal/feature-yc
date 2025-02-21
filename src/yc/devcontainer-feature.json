@@ -1,7 +1,7 @@
 {
     "name": "Yandec Cloud CLI",
     "id": "yc",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "The Yandex Cloud command line interface",
     "dependsOn": {
         "ghcr.io/devcontainers/features/common-utils:2.5.2": {}

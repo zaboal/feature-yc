@@ -7,6 +7,9 @@
 # Have to download this file at check for its actual options
 # before putting them instide of devcontainer-feature.json.
 
+# The command is taken from the official documentation:
+# https://yandex.cloud/en/docs/cli/quickstart#install
+
 su -c '
 curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
 ' $_REMOTE_USER
