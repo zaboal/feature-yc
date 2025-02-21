@@ -25,7 +25,7 @@
             "enum": ["yes", "no"],
             "default": "yes"
         },
-        "autp-rc": {
+        "auto-rc": {
             "description": "Automatically modify default rc file with PATH modification and shell completion.",
             "type": "string",
             "enum": ["yes", "no"],

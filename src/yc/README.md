@@ -18,7 +18,7 @@ The Yandex Cloud command line interface
 | cli-install-path | Install to a specific directory. | string | - |
 | rc-path | Automatically modify RC_FILE with PATH modification and shell completion. | string | - |
 | no-rc | Don't modify the RC file. | string | yes |
-| autp-rc | Automatically modify default rc file with PATH modification and shell completion. | string | yes |
+| auto-rc | Automatically modify default rc file with PATH modification and shell completion. | string | yes |
 
 
 
