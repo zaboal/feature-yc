@@ -10,4 +10,6 @@ else
   HOME="/home/$USERNAME"
 fi
 
-bash yc-setup.sh
+# Have to download this file at check for its actual options
+# before putting them instide of devcontainer-feature.json.
+curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
